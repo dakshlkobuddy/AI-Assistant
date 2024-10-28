@@ -7,14 +7,14 @@ from streamlit_option_menu import option_menu  # Import option_menu for sidebar 
 
 # Assuming 'config.json' is in the working directory
 # Set the path for the config file
-config_path = os.path.join('D:/Python Projects/Gemini AI', 'config.json')
+config_path = os.path.join('D:/Python Projects/AI Assistant', 'config.json')
 
 # Load the config.json file to get configuration settings
 with open(config_path, 'r') as f:
     config = json.load(f)  # Read the JSON data into a Python dictionary
 
 # Import functions from gemini_utility module for AI functionality
-from gemini_utility import (load_gemini_pro_model,  # Function to load the AI model
+from AI_Utility import (load_gemini_pro_model,  # Function to load the AI model
                             gemini_pro_response,  # Function to get a response from the AI
                             gemini_pro_vision_response,  # Function for image captioning
                             embeddings_model_response)  # Function for text embeddings
