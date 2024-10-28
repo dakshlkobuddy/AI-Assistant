@@ -7,7 +7,10 @@ from streamlit_option_menu import option_menu  # Import option_menu for sidebar 
 
 # Assuming 'config.json' is in the working directory
 # Set the path for the config file
-config_path = os.path.join('D:/Python Projects/AI Assistant', 'config.json')
+
+# config_path = os.path.join('D:/Python Projects/AI Assistant', 'config.json')
+config_path = os.path.join(os.path.dirname(__file__), 'config.json')
+
 
 # Load the config.json file to get configuration settings
 with open(config_path, 'r') as f:
